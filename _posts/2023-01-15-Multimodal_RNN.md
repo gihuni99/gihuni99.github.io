@@ -11,7 +11,6 @@ tags:
   ]
 pin: true
 ---
-(처음 인공지능 공부를 시작할 때, notion에 정리했던 논문 내용을 업로드하는 것이다. 부족한 부분이 많다.)
 
 ![Untitled](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/2c382f52-0cf9-40e5-b91a-b7527b913a3d)
 
