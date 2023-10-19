@@ -1,5 +1,5 @@
 ---
-title: 23-1 Capstone Design 정리
+title: 23-1 Capstone Design
 date: 2023-06-20 00:00:00 +09:00
 categories: [Project, Capstone Design]
 tags:
@@ -11,7 +11,7 @@ tags:
 pin: true
 ---
 
-# Latent Diffusion Models를 이용한 Crowd Counting (Crowd Counting Using Diffusion-Based Latent Space)
+# 주제: Latent Diffusion Models를 이용한 Crowd Counting (Crowd Counting Using Diffusion-Based Latent Space)
 
 # 기간: 2023/2/27 - 2023/6/23
 
