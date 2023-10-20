@@ -11,7 +11,7 @@ tags:
 pin: true
 ---
 
-[Capstone Design을 하면서 아이디어를 얻기 위해 논문을 읽었다.]
+[Capstone Design을 하면서 아이디어를 얻기 위해 논문을 읽었다. 아이디어를 얻기 위해 정리하는 것이다보니 주관적인 생각이 많다.]
 
 Image Translation for Person Re-Identification
 in Multispectral Dataset
