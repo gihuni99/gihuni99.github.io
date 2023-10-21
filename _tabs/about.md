@@ -5,7 +5,11 @@ order: 4
 ---
 # Gihun Son
 
-<img src="https://github.com/gihuni99/gihuni99.github.io/assets/90080065/c9b37e4b-1965-4204-a74f-8a6c10195200" width="200" height=""/>  [CV](https://drive.google.com/file/d/1sxhFIcE_qQbqsJinM0ZkC_32E4HiNoUj/view?usp=share_link) / [GitHub](https://github.com/gihuni99) / <thlg60@naver.com>
+<p align="left">
+  <img src="https://github.com/gihuni99/gihuni99.github.io/assets/90080065/9515c438-7fdb-42ba-a78c-4d692f75fc8b" width="300">
+</p>
+
+[CV](https://drive.google.com/file/d/1sxhFIcE_qQbqsJinM0ZkC_32E4HiNoUj/view?usp=share_link) / [GitHub](https://github.com/gihuni99) / <thlg60@naver.com> 
 
 저는 Computer Vision분야에 흥미를 느끼고 공부하고 있습니다. 특히 Multi-modal Learning, Synthetic Data Generation 등의 분야에 관심이 있습니다. 저의 CV와 GitHub는 위의 링크에서 확인하실 수 있습니다.
 
