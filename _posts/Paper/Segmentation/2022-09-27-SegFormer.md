@@ -1,5 +1,5 @@
 ---
-title: SegFormer
+title: SegFormer 논문 리뷰
 date: 2022-09-27 00:00:00 +09:00
 categories: [Paper, Segmentation]
 tags:

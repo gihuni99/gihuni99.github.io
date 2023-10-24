@@ -1,5 +1,5 @@
 ---
-title: ThermalGAN(Multimodal Color-to-Thermal)
+title: ThermalGAN(Multimodal Color-to-Thermal) 논문 리뷰
 date: 2023-03-05 00:00:00 +09:00
 categories: [Paper, Data Synthesis]
 tags:
