@@ -11,6 +11,13 @@ tail_includes:
 
 {% include lang.html %}
 
+<head>
+  {% include head.html %}
+  {% if page.use_math %}
+      {% include mathjax_support.html %}
+  {% endif %}
+</head>
+
 <header>
   <h1 data-toc-skip>{{ page.title }}</h1>
 
