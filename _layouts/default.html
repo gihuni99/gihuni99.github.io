@@ -21,14 +21,8 @@ layout: compress
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-    {% if page.use_math %}
-      {% include mathjax_support.html %}
-    {% endif %}
-  </head>
-
+  {% include head.html %}
+  
   <body>
     {% include sidebar.html lang=lang %}
 
