@@ -1,12 +1,12 @@
 ---
 title: FaceFormer:Speech-Driven 3D Facial Animation with Transformers 논문 리뷰
 date: 2023-11-28 00:00:00 +09:00
-categories: [Paper, 3D Head Generation]
+categories: [Paper, 3D Talking Head Generation]
 use_math: true
 tags:
   [
     Paper,
-    3D Head Generation
+    3D Talking Head Generation
   ]
 pin: true
 ---
