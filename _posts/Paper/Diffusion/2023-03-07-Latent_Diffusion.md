@@ -2,6 +2,7 @@
 title: High-Resolution Image Synthesis with Latent Diffusion Models
 date: 2023-03-07 00:00:00 +09:00
 categories: [Paper, Data Synthesis]
+use_math: true
 tags:
   [
     Computer Vision,

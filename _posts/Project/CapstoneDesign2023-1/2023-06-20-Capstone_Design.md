@@ -2,6 +2,7 @@
 title: 23-1 Capstone Design
 date: 2023-06-20 00:00:00 +09:00
 categories: [Project, Capstone Design]
+use_math: true
 tags:
   [
     Computer Vision,

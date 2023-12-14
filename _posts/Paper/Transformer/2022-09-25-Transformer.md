@@ -2,6 +2,7 @@
 title: Transformer(Attention is All you Need) 논문 리뷰
 date: 2022-09-25 20:00:00 +09:00
 categories: [Paper, Transformer]
+use_math: true
 tags:
   [
     NLP,

@@ -2,6 +2,7 @@
 title: 2023 Samsung AI Challenge:Camera-Invariant Domain Adaptation
 date: 2023-10-05 00:00:00 +09:00
 categories: [Project, 2023 Samsung AI Challenge]
+use_math: true
 tags:
   [
     Computer Vision,

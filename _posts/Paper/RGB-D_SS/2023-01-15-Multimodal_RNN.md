@@ -2,6 +2,7 @@
 title: Multimodal recurrent neural networks 논문 리뷰
 date: 2023-01-15 00:00:00 +09:00
 categories: [Paper, RGB-D Segmentation]
+use_math: true
 tags:
   [
     Computer Vision,
