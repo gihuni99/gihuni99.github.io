@@ -1,6 +1,6 @@
 ---
 title: Learning a model of facial shape and expression from 4D scans(FLAME) 공부 노트
-date: 2023-12-13 00:00:00 +09:00
+date: 2023-12-14 00:00:00 +09:00
 categories: [Studying Note, Paper]
 use_math: true
 tags:
