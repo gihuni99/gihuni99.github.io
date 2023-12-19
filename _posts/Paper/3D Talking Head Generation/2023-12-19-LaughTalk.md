@@ -2,7 +2,7 @@
 title: LaughTalk:Expressive 3D Talking Head Generation with Laughter 논문 리뷰
 date: 2023-12-19 00:00:00 +09:00
 categories: [Paper, 3D Talking Head Generation]
-use\_math: true
+use_math: true
 tags:
   [
     Paper,
@@ -98,7 +98,7 @@ pin: true
 - First stage
     - ‘pre-trained audio encoder’를 통해 ‘audio feature’를 extracting
     - ‘Transformer decoder’가 ‘audio feature’로부터 ‘FLAME’ parameters를 regression하는 것을 training
-        - 위 training에서는 ‘LaughTalk dataset’의 일부인 ‘$LaughTalk\_{MEAD}$(neutral(중립적인) speech와 facial movements)’를 사용
+        - 위 training에서는 ‘LaughTalk dataset’의 일부인 ‘$LaughTalk_{MEAD}$(neutral(중립적인) speech와 facial movements)’를 사용
         
         ⇒ ‘verbal cues’에만 초점을 두었다.
         
@@ -108,7 +108,7 @@ pin: true
     ⇒ ‘first stage model’은 training되지 않은 부분
     
     - second stage에서 사용된 ‘separate model’은 ‘first stage’에서 사용된 모델과 동일한 architecture를 갖지만, weights는 공유되지 않는다.
-    - 이제, ‘LaughTalk dataset’의 나머지 일부인 ‘$LaughTalk\_{CELEB}$(speech와 laughter를 모두 포함)’을 사용한다.
+    - 이제, ‘LaughTalk dataset’의 나머지 일부인 ‘$LaughTalk_{CELEB}$(speech와 laughter를 모두 포함)’을 사용한다.
     - ‘first stage model’이 ‘speech articulation’을 나타내도록 학습되었을 때, ‘second stage model’은 ‘non-verbal signal’을 expression하는 것에 초점을 두고 training된다.
     - 각 ‘stage(1, 2) model’에서 파생된 ‘FLAME parameters’를 combining하는 것은 ‘3D facial animation’에서 ‘verbal’, ‘non-verbal’ cue가 동시에 나타날 수 있게 해준다.
 
@@ -157,7 +157,7 @@ pin: true
 
 - “FLAME(parametric 3D head model)”을 ‘LaughTalk dataset’과 ‘3D talking head’에 대한 ‘3D human face representation’으로 사용하였다.
 - ‘face shape coefficients($\beta \in \R^{\|\beta\|}$)’, ‘facial expression coefficients($\psi \in \R^{\|\psi\|}$)’, ‘pose($\theta \in \R^{3k+3},k=4$ joints)’가 주어졌을 때,
-- “FLAME model $M$”으로, ‘3D face mesh $V \in \R^{n\_j \times 3}(n\_v=5023)$’와 ‘3D facial landmarks $J^{3D} \in \R^{n\_j \times 3}(n\_j=68)$’를 획득할 수 있다.
+- “FLAME model $M$”으로, ‘3D face mesh $V \in \R^{n_j \times 3}(n_v=5023)$’와 ‘3D facial landmarks $J^{3D} \in \R^{n_j \times 3}(n_j=68)$’를 획득할 수 있다.
     - $[V,J^{3D}]=M(\beta,\psi,\theta)$
 
 ## 3.2. LaughTalk dataset
@@ -165,9 +165,9 @@ pin: true
 ![Untitled 15](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/fec1fdbf-aac4-47f4-b4fa-91a588470db8)
 
 - ‘talking, laughing facial video clip’과 ‘corresponding pseudo-annotated FLAME parameters’로 구성된 “LaughTalk dataset”을 제시한다.
-- 먼저 ‘neutral talking’을 위해 “MEAD”에서 ‘2D video clips’를 curate한다.⇒ $LaughTalk\_{MEAD}$
+- 먼저 ‘neutral talking’을 위해 “MEAD”에서 ‘2D video clips’를 curate한다.⇒ $LaughTalk_{MEAD}$
 - ‘laughter’가 있는 ‘talking’을 위해 “CelebV-HQ”와 “CelebV-Text”를 curate한다.
-⇒$LaughTalk\_{CELEB}$
+⇒$LaughTalk_{CELEB}$
 - 그 후, 유의미한 sample들을 얻기 위한 filtering을 하고, 마지막으로 ‘3D pseudo-annotation’을 취득한다.
 - ‘curated dataset’의 예시는 Fig2에 있다.
 
@@ -186,10 +186,10 @@ pin: true
 ![Untitled 17](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/8e4441f2-3a33-42ff-b26f-00aa51140b90)
 
 - ‘CelebV-HQ’와 ‘CelebV-Text’는 ‘rich facial attributes(appearance, emotion, action)’가 있는 ‘in-the-wild face videos’를 가지고 있다.
-- 논문에서는 “$LaughTalk\_{CELEB}$”의 ‘laughing, talking video clips’를 construct하기 위해 “laugh”, “smile”, “happy”, “talk”를 찾는다.
+- 논문에서는 “$LaughTalk_{CELEB}$”의 ‘laughing, talking video clips’를 construct하기 위해 “laugh”, “smile”, “happy”, “talk”를 찾는다.
 - 유사하게, “MEAD”는 ‘emotion attributes’와 ‘emotion intensity’의 annotation을 제공한다.
 
-⇒ “MEAD”에서는 ‘neutral attribute’를 찾고, “$LaughTalk\_{MEAD}$”의 ‘neutral talking video clips’를 모은다.
+⇒ “MEAD”에서는 ‘neutral attribute’를 찾고, “$LaughTalk_{MEAD}$”의 ‘neutral talking video clips’를 모은다.
 
 ### Data filtering process
 
@@ -268,9 +268,9 @@ pin: true
 - “LaughTalk”는 ‘2-stage training strategy’를 수행한다.
 - 먼저, ‘stage-1 model’은 ‘talk(speech의 ‘verbal signals’)’를 training한다.
 
-⇒ ‘neutral speech videos($LaughTalk\_{MEAD}$)’를 통해 ‘lip movement synchronization’을 위한 ‘facial representation’을 생성하도록 training된다.
+⇒ ‘neutral speech videos($LaughTalk_{MEAD}$)’를 통해 ‘lip movement synchronization’을 위한 ‘facial representation’을 생성하도록 training된다.
 
-- ‘stage-1 model’이 ‘speech-related movements animation’ ability를 획득한 후에, ‘$LaughTalk\_{CELEB}$’를 사용하여 ‘stage-2 model’을 training한다.
+- ‘stage-1 model’이 ‘speech-related movements animation’ ability를 획득한 후에, ‘$LaughTalk_{CELEB}$’를 사용하여 ‘stage-2 model’을 training한다.
 
 ⇒ ‘lip movements’와 ‘facial expressions’를 동시에 animate할 수 있도록 training
 
@@ -283,13 +283,13 @@ pin: true
 
 ![Untitled 25](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/39550737-9ce2-4bbc-a20b-502e32a7ef0c)
 
-- $F\_{1:T}=(f\_1,...,f\_T)$는 ‘facial motions의 temporal sequence’
-    - $f\_t$는 ‘facial representation’
-        - ‘facial representation($f\_t$)’는 “FLAEM parameters”의 ‘expression coefficient’와 ‘jaw pose’의 concat ⇒ $f\_t=[\psi\_t,\theta^{jaw}\_t]$
-- $A\_{1:T}=(a\_1,...,a\_T)$는 ‘speech representations의 sequence’
-- 논문의 목표는 corresponding ‘speech representation sequence($A\_{1:T}$)’를 통해 ‘facial representations($F\_{1:T}$)’를 순차적으로 synthesize하는 것이다.
-- $F\_{1:T}$를 ‘mesh vertex’로 visualize하기 위해, 임의적인 ‘face shape parameter($\beta$)’와 함께 “FLAME model($M$)”의 input으로 들어간다.
-- animated vertex $V\_{1:T}=M(\beta,F\_{1:T})$
+- $F_{1:T}=(f_1,...,f_T)$는 ‘facial motions의 temporal sequence’
+    - $f_t$는 ‘facial representation’
+        - ‘facial representation($f_t$)’는 “FLAEM parameters”의 ‘expression coefficient’와 ‘jaw pose’의 concat ⇒ $f_t=[\psi_t,\theta^{jaw}_t]$
+- $A_{1:T}=(a_1,...,a_T)$는 ‘speech representations의 sequence’
+- 논문의 목표는 corresponding ‘speech representation sequence($A_{1:T}$)’를 통해 ‘facial representations($F_{1:T}$)’를 순차적으로 synthesize하는 것이다.
+- $F_{1:T}$를 ‘mesh vertex’로 visualize하기 위해, 임의적인 ‘face shape parameter($\beta$)’와 함께 “FLAME model($M$)”의 input으로 들어간다.
+- animated vertex $V_{1:T}=M(\beta,F_{1:T})$
 
 ### Stage-1: learning to talk
 
@@ -297,9 +297,9 @@ pin: true
 
 - ‘stage-1 model’은 주로 ‘speech-related signals’를 capture하여 ‘3D faces animation’을 training하도록 설계되었다.
 - ‘stage-1 model’은 다음과 같이 구성된다.
-    - Verbal Encoder $E\_v$
+    - Verbal Encoder $E_v$
         - ‘input audio’로부터 ‘speech-related features’를 extract
-    - Transformer Decoder $D\_v$
+    - Transformer Decoder $D_v$
         - ‘speech-related feature’를 통해 ‘autoregressive manner’로 ‘facial representations sequences’를 생성
 
 ![Untitled 27](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/f6a9e170-881f-4db9-8b6e-bb0a7f742dbc)
@@ -325,23 +325,23 @@ pin: true
     ⇒ ‘audio’와 ‘facial representations’를 align하기 위해
     
 - 위 과정을 공식으로 나타내면 아래와 같다.
-    - $\hat{f}\_t=D\_v(E\_v(A\_{1:T}),\hat{F}\_{1:t-1})$
-        - $\hat{f}\_t$는 ‘currently predicted facial representation’
-        - $\hat{F}\_{1:t-1}$은 ‘past predicted sequences’
-- 모든 sequence $\hat{F}\_{1:T}$를 predict한 후에, ‘mesh vertex’와 ‘3D landmarks’로 변환하기 위해 임의의 ‘shape parameter($\beta$)’와 함께 “FLAME model($M$)”의 input으로 넣는다.
-    - $[\hat{V}\_{1:T},\hat{J}^{3D}\_{1:T}]=M(\beta,\hat{F}\_{1:T})$
+    - $\'hat{f}_t'='D_v'('E_v'('A_{1:T}'),'\hat{F}_{1:t-1}')$
+        - $\hat{f}_t$는 ‘currently predicted facial representation’
+        - $\hat{F}_{1:t-1}$은 ‘past predicted sequences’
+- 모든 sequence $\hat{F}_{1:T}$를 predict한 후에, ‘mesh vertex’와 ‘3D landmarks’로 변환하기 위해 임의의 ‘shape parameter($\beta$)’와 함께 “FLAME model($M$)”의 input으로 넣는다.
+    - $[\hat{V}_{1:T},\hat{J}^{3D}_{1:T}]=M(\beta,\hat{F}_{1:T})$
 
 ![Untitled 29](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/44cb3312-e24b-4e81-b0db-27faaeb014b6)
 
 - 논문은 ‘wav2vec 2.0’의 ‘pretrained weights’로 설정된 ‘frozen TCN’를 유지하며, ‘stage-1 model’의 ‘Transformer Encoder, Decoder’를 training한다.
-- 주로 ‘verbal signals’에 초점을 둠으로써 model이 ‘facial movements’를 animate하도록 training시키기 위해서, ‘$LaughTalk\_{MEAD}$’를 사용하여 training하였다.
+- 주로 ‘verbal signals’에 초점을 둠으로써 model이 ‘facial movements’를 animate하도록 training시키기 위해서, ‘$LaughTalk_{MEAD}$’를 사용하여 training하였다.
 
-⇒ $LaughTalk\_{MEAD}$는 ‘neutral tone’의 speech를 포함하고 있다.
+⇒ $LaughTalk_{MEAD}$는 ‘neutral tone’의 speech를 포함하고 있다.
 
 - ‘stage-1 model’의 ‘training objective’는 위 식(1)과 같다.
-    - $\hat{\psi\_{1:T}}$는 ‘predicted facial representations($\hat{F}\_{1:T}$)’의 ‘expression parameters’
-    - $\hat{J}^{3D}\_{1:T}$는 ‘predicted 3D facial landmarks’
-    - $\{\lambda\_*\}$는 각 ‘loss term’의 weights
+    - $\hat{\psi_{1:T}}$는 ‘predicted facial representations($\hat{F}_{1:T}$)’의 ‘expression parameters’
+    - $\hat{J}^{3D}_{1:T}$는 ‘predicted 3D facial landmarks’
+    - $\{\lambda_*\}$는 각 ‘loss term’의 weights
 
 ### Stage-2: learning to laugh
 
@@ -352,24 +352,24 @@ pin: true
 - ‘stage-2 model’은 ‘pretrained stage-1 model’을 포함하고, ‘speech’와 ‘laughter’를 모두 포함하는 ‘3D faces animation’을 training하도록 설계되었다.
 - ‘stage-1 model’을 freeze하기 때문에, ‘stage-2 model’은 ‘stage-1 model’이 학습하지 못했던 ‘residual facial representations generation’을 training하는 것에 초점을 두도록 유도된다.
 - 논문에서는 위와 같은 ‘residual representations’가 ‘speech’의 ‘non-verbal cues’와 연관되어있을 것이라고 추정한다.
-- 다시 말해, ‘stage-2 model’은 ‘residual facial representations($\hat{F}'\_{1:T}$)’를 예측하도록 training되는 것이다.
+- 다시 말해, ‘stage-2 model’은 ‘residual facial representations($\hat{F}'_{1:T}$)’를 예측하도록 training되는 것이다.
 
-⇒ ‘stage-1 model($\hat{F}\_{1:T}$)’의 output과 결합되면, ‘verbal, non-verbal signals’가 모두 express되는 ‘3D face’를 생성할 수 있다.
+⇒ ‘stage-1 model($\hat{F}_{1:T}$)’의 output과 결합되면, ‘verbal, non-verbal signals’가 모두 express되는 ‘3D face’를 생성할 수 있다.
 
 ![Untitled 32](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/2efafc0f-c4f8-4c78-a129-ea7f533a8eb2)
 
 - ‘stage-2 model’의 architecture는 ‘stage-1 model’과 동일하다. (다음과 같이 구성됨)
-    - Non-verbal Encoder $E\_n$
-    - Transformer Decoder $D\_n$
+    - Non-verbal Encoder $E_n$
+    - Transformer Decoder $D_n$
 - ‘stage-1 model’과 다른 점은, ‘stage-2 model’은 ‘emotion recognition model’의 ‘pretrained weights’로 initialize된 ‘wav2vec 2.0’을 ‘Non-verbal Encoder’로 사용한다는 것이다.
 
 ![Untitled 33](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/bde46aef-5708-4d33-868b-8c0c656edc79)
 
-- ‘Transformer Encoder, Decoder’를 ‘laughter’와 ‘speech’가 모두 있는 ‘in-the-wild audio samples’를 포함하는 “$LaughTalk\_{CELEB}$”를 사용하여 training한다.
+- ‘Transformer Encoder, Decoder’를 ‘laughter’와 ‘speech’가 모두 있는 ‘in-the-wild audio samples’를 포함하는 “$LaughTalk_{CELEB}$”를 사용하여 training한다.
 (’TCN’과 ‘stage-1 model’은 frozen)
 - ‘stage-2 model’의 training objective는 위 식(2)와 같다.
-    - $V\_{1:T}, \hat{V}'\_{1:T}$는 각각 ‘GT vertex sequence’, ‘predicted vertex sequence’
-- ‘predicted vertex($\hat{V}'\_{1:T}$)’는  ‘pre-trained stage-1 model’과 ‘stage-2 model의 residual part’를 통해 나온 “FLAME parameters’를 합쳐서 만들어졌다.
+    - $V_{1:T}, \hat{V}'_{1:T}$는 각각 ‘GT vertex sequence’, ‘predicted vertex sequence’
+- ‘predicted vertex($\hat{V}'_{1:T}$)’는  ‘pre-trained stage-1 model’과 ‘stage-2 model의 residual part’를 통해 나온 “FLAME parameters’를 합쳐서 만들어졌다.
 - 공식으로 나타내면 위 식과 같이 나타낼 수 있다.
 
 ---
