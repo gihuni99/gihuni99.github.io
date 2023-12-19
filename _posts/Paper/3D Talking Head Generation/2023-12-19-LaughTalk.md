@@ -325,11 +325,11 @@ pin: true
     ⇒ ‘audio’와 ‘facial representations’를 align하기 위해
     
 - 위 과정을 공식으로 나타내면 아래와 같다.
-    - $\hat{f}_t=D_v(E_v(A_{1:T})$,$\hat{F}_{1:t-1})$
+    - $$\hat{f}_t=D_v(E_v(A_{1:T}),\hat{F}_{1:t-1})$$
         - $\hat{f}_t$는 ‘currently predicted facial representation’
         - $\hat{F}_{1:t-1}$은 ‘past predicted sequences’
 - 모든 sequence $\hat{F}_{1:T}$를 predict한 후에, ‘mesh vertex’와 ‘3D landmarks’로 변환하기 위해 임의의 ‘shape parameter($\beta$)’와 함께 “FLAME model($M$)”의 input으로 넣는다.
-    - $[\hat{V}_{1:T}$,$\hat{J}^{3D}_{1:T}]=M(\beta$,$\hat{F}_{1:T})$
+    - $$[\hat{V}_{1:T},\hat{J}^{3D}_{1:T}]=M(\beta,\hat{F}_{1:T})$$
 
 ![Untitled 29](https://github.com/gihuni99/gihuni99.github.io/assets/90080065/44cb3312-e24b-4e81-b0db-27faaeb014b6)
 
