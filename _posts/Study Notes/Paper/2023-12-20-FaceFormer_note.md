@@ -1,11 +1,11 @@
 ---
 title: FaceFormer:Speech-Driven 3D Facial Animation with Transformers 공부 노트
 date: 2023-12-20 00:00:00 +09:00
-categories: [Studying Note, Paper]
+categories: [Study Notes, Paper]
 use_math: true
 tags:
   [
-    Studying Note,
+    Study Notes,
     Paper,
     3D Talking Head Generation,
     FaceFormer
