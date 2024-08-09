@@ -6,7 +6,7 @@ order: 4
 # Gihun Son
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/b1534817-cac7-4360-b008-0fc2e158c84d" width="300">
+  <img src="https://github.com/user-attachments/assets/b1534817-cac7-4360-b008-0fc2e158c84d" width="800">
 </p>
 
 [CV](https://drive.google.com/file/d/1r25YdWBgkyh5ZF2cdA1IEWfb4l4Md6dw/view?usp=sharing) / [Portfolio](https://drive.google.com/file/d/1hJbFdAfLJ5gwZF4mChgvY-nmAr3qSP5r/view?usp=sharing) / [GitHub](https://github.com/gihuni99) / Contact: <gihun.son@postech.ac.kr> / <thlg60@naver.com> 
