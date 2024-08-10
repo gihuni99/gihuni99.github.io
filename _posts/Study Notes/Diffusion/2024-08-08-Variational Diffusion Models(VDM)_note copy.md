@@ -1,6 +1,6 @@
 ---
 title: Understanding Diffusion Models - A Unified Perspective(Variational Diffusion Models - VDM) 공부 노트
-date: 2024-07-13 00:00:00 +09:00
+date: 2024-08-08 00:00:00 +09:00
 categories: [Study Notes, Diffusion]
 use_math: true
 tags:
