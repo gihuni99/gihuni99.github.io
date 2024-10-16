@@ -9,7 +9,7 @@ order: 4
   <img src="https://github.com/user-attachments/assets/b1534817-cac7-4360-b008-0fc2e158c84d" width="800">
 </p>
 
-[CV](https://drive.google.com/file/d/1CJ_SdAxYCe_H8LvZcZyJTsLQvn7iHoBh/view?usp=sharing) / [Portfolio](https://drive.google.com/file/d/1sw9GME3Sha64U8qx3P8INFnuwyLWXIm8/view?usp=sharing) / [GitHub](https://github.com/gihuni99) / Contact: <gihun.son@postech.ac.kr> / <thlg60@naver.com> 
+[CV](https://drive.google.com/file/d/1Tg5D8LqhCblsVkYQkT7PhWN2U90eOKbc/view?usp=sharing) / [Portfolio](https://drive.google.com/file/d/1AC9V01OElXg_uDP51LiVtyz3jf9wwZV8/view?usp=sharing) / [GitHub](https://github.com/gihuni99) / Contact: <thlg60@naver.com> 
 
 저는 Computer Vision분야에 흥미를 느끼고 공부하고 있습니다. 특히 Multi-modal Learning분야에 관심이 있습니다. 저의 CV와 GitHub는 위의 링크에서 확인하실 수 있습니다.
 
