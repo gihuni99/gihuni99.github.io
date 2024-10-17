@@ -13,7 +13,7 @@ pin: true
 ---
 
 # 'MultiTalk: Enhancing 3D Talking Head Generation Across Languages with Multilingual Video Dataset', INTERSPEECH 2024
-### Kim Sung-Bin*, Lee Chae-Yeon*, Gihun Son*, Oh Hyun-Bin, Janghoon Ju, Suekyeong Nam, Tae-Hyun Oh (*equal contribution) 
+### Kim Sung-Bin\*, Lee Chae-Yeon\*, **Gihun Son**\*, Oh Hyun-Bin, Janghoon Ju, Suekyeong Nam, Tae-Hyun Oh (\*equal contribution)
 [Paper](https://arxiv.org/abs/2406.14272)
 
 ![Gihun Son_MultiTalk_page-0001](https://github.com/user-attachments/assets/6e2bc356-1d75-4f43-8cb6-541de4ca86a2)
