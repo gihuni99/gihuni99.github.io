@@ -6,8 +6,8 @@ categories: [POSTECH,2024WURF]
 use_math: true
 tags:
   [
-    Postech_24_WURF,
-    Paper
+    2024WURF,
+    3D Talking Head Generation
   ]
 pin: true
 ---
