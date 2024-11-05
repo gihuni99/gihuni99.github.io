@@ -2,7 +2,7 @@
 title: Paper Accepted (MultiTalk Enhancing 3D Talking Head Generation Across Languages with Multilingual Video Dataset, INTERSPEECH 2024)
 
 date: 2024-09-01 00:00:00 +09:00
-categories: [Postech_24_WURF]
+categories: [POSTECH,2024WURF]
 use_math: true
 tags:
   [
